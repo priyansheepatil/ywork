@@ -65,12 +65,12 @@ def get_user_input():
             try:
                 row = list(map(int, input(f"Row {i+1}: ").split()))
                 if len(row) != 9:
-                    print("⚠️ Please enter exactly 9 numbers.")
+                    print(" Please enter exactly 9 numbers.")
                     continue
                 board.append(row)
                 break
             except ValueError:
-                print("⚠️ Enter only numbers.")
+                print("Enter only numbers.")
     return board
 
 
